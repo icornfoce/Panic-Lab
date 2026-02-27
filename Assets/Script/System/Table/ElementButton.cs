@@ -6,7 +6,7 @@ public class ElementButton : MonoBehaviour {
     public ElementData data;
     public TextMeshProUGUI symbolText;
     public TextMeshProUGUI numberText;
-    public Image background;
+    public RawImage background;
 
     void Start() {
         if (data != null) UpdateUI();
@@ -19,7 +19,6 @@ public class ElementButton : MonoBehaviour {
     }
 
     public void OnClick() {
-        // ส่งข้อมูลไปยังหน้าต่างแสดงรายละเอียด (Pop-up)
         UIManager.Instance.ShowDetails(data);
     }
 }
