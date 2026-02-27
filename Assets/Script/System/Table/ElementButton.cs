@@ -1,8 +1,10 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
+using PanicLab.Player;
 
-public class ElementButton : MonoBehaviour {
+public class ElementButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
     public ElementData data;
     public TextMeshProUGUI symbolText;
     public TextMeshProUGUI numberText;
@@ -18,7 +20,21 @@ public class ElementButton : MonoBehaviour {
         background.color = data.categoryColor;
     }
 
+    public void OnPointerEnter(PointerEventData eventData) {
+        if (UIManager.Instance != null && data != null) {
+            UIManager.Instance.ShowDetails(data);
+        }
+    }
+
+    public void OnPointerExit(PointerEventData eventData) {
+        if (UIManager.Instance != null) {
+            UIManager.Instance.ClosePanel();
+        }
+    }
+
     public void OnClick() {
-        UIManager.Instance.ShowDetails(data);
+        if (ChemicalHolder.Instance != null && data != null) {
+            ChemicalHolder.Instance.SetChemical(data);
+        }
     }
 }

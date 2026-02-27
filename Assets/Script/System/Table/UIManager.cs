@@ -4,21 +4,54 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour 
 {
-    public static UIManager Instance; // ทำให้ Script อื่นเรียกใช้ง่ายๆ
+    public static UIManager Instance;
 
     [Header("Detail Panel UI")]
-    public GameObject detailPanel; // หน้าต่าง Pop-up
+    public GameObject detailPanel;
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI symbolText;
     public TextMeshProUGUI infoText;
 
+    [Header("Follow Mouse Settings")]
+    [Tooltip("Positive X/Y moves to Top-Right. Negative moves to Bottom-Left.")]
+    public Vector2 panelOffset = new Vector2(20f, -20f);
+
+    private RectTransform _panelRectTransform;
+    private CanvasGroup _canvasGroup;
+
     void Awake() 
     {
-        // สร้าง Singleton เพื่อให้เรียกใช้ผ่าน UIManager.Instance ได้เลย
         if (Instance == null) Instance = this; 
         else Destroy(gameObject);
 
-        if(detailPanel != null) detailPanel.SetActive(false); 
+        if(detailPanel != null) {
+            detailPanel.SetActive(false); 
+            _panelRectTransform = detailPanel.GetComponent<RectTransform>();
+            
+            // Fix flickering by ensuring the panel doesn't block raycasts
+            _canvasGroup = detailPanel.GetComponent<CanvasGroup>();
+            if (_canvasGroup == null) {
+                _canvasGroup = detailPanel.AddComponent<CanvasGroup>();
+            }
+            _canvasGroup.blocksRaycasts = false;
+            _canvasGroup.interactable = false;
+        }
+    }
+
+    private void LateUpdate() // Use LateUpdate for smoother following
+    {
+        if (detailPanel != null && detailPanel.activeSelf)
+        {
+            UpdatePanelPosition();
+        }
+    }
+
+    private void UpdatePanelPosition()
+    {
+        // mousePosition is in screen space. 
+        // We add the offset to position it bottom-right (Positive X, Negative Y)
+        Vector2 mousePosition = Input.mousePosition;
+        _panelRectTransform.position = mousePosition + panelOffset;
     }
 
     public void ShowDetails(ElementData data) 
@@ -26,6 +59,8 @@ public class UIManager : MonoBehaviour
         if(detailPanel == null) return;
 
         detailPanel.SetActive(true);
+        UpdatePanelPosition();
+
         nameText.text = data.elementName;
         symbolText.text = data.symbol;
         infoText.text = $"Atomic Number: {data.atomicNumber}\n" +
@@ -35,6 +70,6 @@ public class UIManager : MonoBehaviour
 
     public void ClosePanel() 
     {
-        detailPanel.SetActive(false);
+        if(detailPanel != null) detailPanel.SetActive(false);
     }
 }
