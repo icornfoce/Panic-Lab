@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 26_Data
   m_EditorClassIdentifier: 
   elementName: Iron
-  symbol: Fr
+  symbol: Fe
   atomicNumber: 26
   atomicMass: 55.8
   categoryColor: {r: 0.98039216, g: 0.77254903, b: 0.7176471, a: 1}

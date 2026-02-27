@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 29_Data
   m_EditorClassIdentifier: 
   elementName: Copper
-  symbol: CU
+  symbol: Cu
   atomicNumber: 29
   atomicMass: 63.5
   categoryColor: {r: 0.98039216, g: 0.77254903, b: 0.7176471, a: 1}
