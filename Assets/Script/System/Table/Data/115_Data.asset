@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eca90697e91e95c428ab2c7c6f774541, type: 3}
+  m_Name: 115_Data
+  m_EditorClassIdentifier: 
+  elementName: Moscovium
+  symbol: Mc
+  atomicNumber: 115
+  atomicMass: 290
+  categoryColor: {r: 0, g: 0, b: 0, a: 0}
+  description: The lightest and most abundant chemical element in the universe. At
+    standard temperature and pressure, it is a colorless, odorless, tasteless, and
+    highly flammable gas.

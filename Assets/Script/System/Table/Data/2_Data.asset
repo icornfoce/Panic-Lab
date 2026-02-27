@@ -10,11 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eca90697e91e95c428ab2c7c6f774541, type: 3}
-  m_Name: H_Data
-  m_EditorClassIdentifier: Assembly-CSharp::ElementData
-  elementName: H
-  symbol: H
-  atomicNumber: 1
-  atomicMass: 1
-  categoryColor: {r: 0.68235296, g: 0.7607844, b: 0.68235296, a: 0}
-  description: HHH
+  m_Name: 2_Data
+  m_EditorClassIdentifier: 
+  elementName: Helium
+  symbol: He
+  atomicNumber: 2
+  atomicMass: 4
+  categoryColor: {r: 0, g: 0, b: 0, a: 0}
+  description: The lightest and most abundant chemical element in the universe. At
+    standard temperature and pressure, it is a colorless, odorless, tasteless, and
+    highly flammable gas.
