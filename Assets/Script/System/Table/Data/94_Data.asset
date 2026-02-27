@@ -16,7 +16,7 @@ MonoBehaviour:
   symbol: Pu
   atomicNumber: 94
   atomicMass: 244
-  categoryColor: {r: 0.9607844, g: 0.8000001, b: 0.854902, a: 0}
+  categoryColor: {r: 0.9607844, g: 0.8000001, b: 0.854902, a: 1}
   description: The lightest and most abundant chemical element in the universe. At
     standard temperature and pressure, it is a colorless, odorless, tasteless, and
     highly flammable gas.
