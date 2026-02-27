@@ -16,7 +16,7 @@ MonoBehaviour:
   symbol: Cs
   atomicNumber: 55
   atomicMass: 133
-  categoryColor: {r: 0.8745098, g: 0.58431375, b: 0.11764706, a: 0}
+  categoryColor: {r: 0.91764706, g: 0.80784315, b: 0.3647059, a: 1}
   description: The lightest and most abundant chemical element in the universe. At
     standard temperature and pressure, it is a colorless, odorless, tasteless, and
     highly flammable gas.
