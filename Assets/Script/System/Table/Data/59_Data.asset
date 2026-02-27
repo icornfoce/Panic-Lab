@@ -16,7 +16,7 @@ MonoBehaviour:
   symbol: Pr
   atomicNumber: 59
   atomicMass: 141
-  categoryColor: {r: 0, g: 0, b: 0, a: 0}
+  categoryColor: {r: 0.9098039, g: 0.81960785, b: 0.6117647, a: 0}
   description: The lightest and most abundant chemical element in the universe. At
     standard temperature and pressure, it is a colorless, odorless, tasteless, and
     highly flammable gas.

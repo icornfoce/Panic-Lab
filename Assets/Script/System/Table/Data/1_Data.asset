@@ -16,7 +16,7 @@ MonoBehaviour:
   symbol: H
   atomicNumber: 1
   atomicMass: 1
-  categoryColor: {r: 0, g: 0.78113204, b: 0.1712965, a: 0.7176471}
+  categoryColor: {r: 0.54901963, g: 0.9294118, b: 0.54901963, a: 1}
   description: The lightest and most abundant chemical element in the universe. At
     standard temperature and pressure, it is a colorless, odorless, tasteless, and
     highly flammable gas.

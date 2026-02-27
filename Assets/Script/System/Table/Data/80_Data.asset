@@ -16,7 +16,7 @@ MonoBehaviour:
   symbol: Hg
   atomicNumber: 80
   atomicMass: 200.5
-  categoryColor: {r: 0, g: 0, b: 0, a: 0}
+  categoryColor: {r: 0.98039216, g: 0.77254903, b: 0.7176471, a: 0}
   description: The lightest and most abundant chemical element in the universe. At
     standard temperature and pressure, it is a colorless, odorless, tasteless, and
     highly flammable gas.
