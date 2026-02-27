@@ -3,7 +3,22 @@ guid: e2f869e56210dda44a35f5cd093c1534
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Solid
+    second: {fileID: 2100000, guid: 7e01da9a0b6555b4bb52370f571494c1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Solid - 25%
+    second: {fileID: 2100000, guid: 5bf3844f3b52d6b4e92b9481e7b4f146, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PastedImage220104-201001
+    second: {fileID: 2800000, guid: 56b74dc7914395142b579f8c3e60571a, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
