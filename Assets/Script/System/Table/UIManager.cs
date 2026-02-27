@@ -28,7 +28,6 @@ public class UIManager : MonoBehaviour
             detailPanel.SetActive(false); 
             _panelRectTransform = detailPanel.GetComponent<RectTransform>();
             
-            // Fix flickering by ensuring the panel doesn't block raycasts
             _canvasGroup = detailPanel.GetComponent<CanvasGroup>();
             if (_canvasGroup == null) {
                 _canvasGroup = detailPanel.AddComponent<CanvasGroup>();
@@ -38,7 +37,7 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    private void LateUpdate() // Use LateUpdate for smoother following
+    private void LateUpdate()
     {
         if (detailPanel != null && detailPanel.activeSelf)
         {
@@ -48,8 +47,6 @@ public class UIManager : MonoBehaviour
 
     private void UpdatePanelPosition()
     {
-        // mousePosition is in screen space. 
-        // We add the offset to position it bottom-right (Positive X, Negative Y)
         Vector2 mousePosition = Input.mousePosition;
         _panelRectTransform.position = mousePosition + panelOffset;
     }
