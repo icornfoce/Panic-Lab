@@ -17,6 +17,7 @@ MonoBehaviour:
   atomicNumber: 81
   atomicMass: 204
   categoryColor: {r: 0.6745098, g: 0.8745099, b: 0.92549026, a: 1}
+  symbolColor: {r: 0, g: 0, b: 0, a: 1}
   description: The lightest and most abundant chemical element in the universe. At
     standard temperature and pressure, it is a colorless, odorless, tasteless, and
     highly flammable gas.

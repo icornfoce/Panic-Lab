@@ -48,7 +48,23 @@ public class UIManager : MonoBehaviour
     private void UpdatePanelPosition()
     {
         Vector2 mousePosition = Input.mousePosition;
-        _panelRectTransform.position = mousePosition + panelOffset;
+        Vector2 targetPos = mousePosition + panelOffset;
+
+        // Clamp to screen boundaries
+        float panelWidth = _panelRectTransform.rect.width * _panelRectTransform.lossyScale.x;
+        float panelHeight = _panelRectTransform.rect.height * _panelRectTransform.lossyScale.y;
+
+        // Calculate screen limits based on pivot (assuming pivot is usually middle or top-left)
+        // Here we'll just use the screen width/height and panel dimensions
+        float minX = panelWidth * _panelRectTransform.pivot.x;
+        float maxX = Screen.width - (panelWidth * (1 - _panelRectTransform.pivot.x));
+        float minY = panelHeight * _panelRectTransform.pivot.y;
+        float maxY = Screen.height - (panelHeight * (1 - _panelRectTransform.pivot.y));
+
+        targetPos.x = Mathf.Clamp(targetPos.x, minX, maxX);
+        targetPos.y = Mathf.Clamp(targetPos.y, minY, maxY);
+
+        _panelRectTransform.position = targetPos;
     }
 
     public void ShowDetails(ElementData data) 

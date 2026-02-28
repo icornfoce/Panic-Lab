@@ -7,5 +7,6 @@ public class ElementData : ScriptableObject {
     public int atomicNumber;
     public float atomicMass;
     public Color categoryColor; // สีตามกลุ่ม เช่น โลหะ, อโลหะ
+    public Color symbolColor = Color.white;
     [TextArea] public string description;
 }

@@ -2651,7 +2651,6 @@ GameObject:
   - component: {fileID: 283679117}
   - component: {fileID: 283679119}
   - component: {fileID: 283679118}
-  - component: {fileID: 283679120}
   m_Layer: 5
   m_Name: DetailPanel
   m_TagString: Untagged
@@ -2716,30 +2715,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 283679116}
   m_CullTransparentMesh: 1
---- !u!114 &283679120
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 283679116}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.GridLayoutGroup
-  m_Padding:
-    m_Left: 0
-    m_Right: 0
-    m_Top: 0
-    m_Bottom: 0
-  m_ChildAlignment: 0
-  m_StartCorner: 0
-  m_StartAxis: 0
-  m_CellSize: {x: 250, y: 105.84}
-  m_Spacing: {x: -2.3, y: 0}
-  m_Constraint: 0
-  m_ConstraintCount: 2
 --- !u!1001 &304251947
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3622,8 +3597,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 307.5, y: 0}
-  m_SizeDelta: {x: 570, y: 300}
+  m_AnchoredPosition: {x: 307.5, y: -5}
+  m_SizeDelta: {x: 570, y: 325}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &347648674
 MonoBehaviour:
@@ -4800,7 +4775,7 @@ MonoBehaviour:
   nameText: {fileID: 1862698008}
   symbolText: {fileID: 918545825}
   infoText: {fileID: 1793586458}
-  panelOffset: {x: 62.5, y: -75}
+  panelOffset: {x: 120, y: -145}
 --- !u!225 &448830817
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -9159,7 +9134,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 600, y: 350}
+  m_SizeDelta: {x: 600, y: 375}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &889435707
 MonoBehaviour:
