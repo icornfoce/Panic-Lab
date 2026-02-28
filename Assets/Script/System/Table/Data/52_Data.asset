@@ -16,8 +16,6 @@ MonoBehaviour:
   symbol: Te
   atomicNumber: 52
   atomicMass: 127.5
-  categoryColor: {r: 0.61960787, g: 0.8980392, b: 0.83137256, a: 1}
-  symbolColor: {r: 0, g: 0, b: 0, a: 1}
-  description: The lightest and most abundant chemical element in the universe. At
-    standard temperature and pressure, it is a colorless, odorless, tasteless, and
-    highly flammable gas.
+  state: 0
+  categoryColor: {r: 0.61960787, g: 0.8980393, b: 0.8313726, a: 1}
+  description: '-'

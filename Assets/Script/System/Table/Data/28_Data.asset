@@ -15,9 +15,7 @@ MonoBehaviour:
   elementName: Nickel
   symbol: Ni
   atomicNumber: 28
-  atomicMass: 58.6
-  categoryColor: {r: 0.98039216, g: 0.77254903, b: 0.7176471, a: 1}
-  symbolColor: {r: 0, g: 0, b: 0, a: 1}
-  description: The lightest and most abundant chemical element in the universe. At
-    standard temperature and pressure, it is a colorless, odorless, tasteless, and
-    highly flammable gas.
+  atomicMass: 59
+  state: 0
+  categoryColor: {r: 0.9803922, g: 0.7725491, b: 0.7176471, a: 1}
+  description: Corrosion-resistant metal used in coins and rechargeable batteries.

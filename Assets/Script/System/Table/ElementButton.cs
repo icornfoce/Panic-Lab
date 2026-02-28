@@ -27,7 +27,9 @@ public class ElementButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
 
     public void UpdateUI() {
         symbolText.text = data.symbol;
-        symbolText.color = data.symbolColor;
+        if (UIManager.Instance != null) {
+            symbolText.color = UIManager.Instance.GetStateColor(data.state);
+        }
         numberText.text = data.atomicNumber.ToString();
         background.color = data.categoryColor;
     }
@@ -36,6 +38,7 @@ public class ElementButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         _targetScale = Vector3.one * hoverScale;
         if (UIManager.Instance != null && data != null) {
             UIManager.Instance.ShowDetails(data);
+            UIManager.Instance.PlayHoverSound();
         }
     }
 

@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
@@ -11,6 +12,16 @@ public class UIManager : MonoBehaviour
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI symbolText;
     public TextMeshProUGUI infoText;
+ 
+    [Header("State Colors")]
+    public Color solidColor = Color.gray;
+    public Color liquidColor = Color.blue;
+    public Color gasColor = Color.red;
+    public Color unknownColor = Color.magenta;
+ 
+    [Header("Audio Settings")]
+    public AudioSource hoverAudioSource;
+    public AudioClip hoverSound;
 
     [Header("Follow Mouse Settings")]
     [Tooltip("Positive X/Y moves to Top-Right. Negative moves to Bottom-Left.")]
@@ -84,5 +95,20 @@ public class UIManager : MonoBehaviour
     public void ClosePanel() 
     {
         if(detailPanel != null) detailPanel.SetActive(false);
+    }
+ 
+    public void PlayHoverSound() {
+        if (hoverAudioSource != null && hoverSound != null) {
+            hoverAudioSource.PlayOneShot(hoverSound);
+        }
+    }
+ 
+    public Color GetStateColor(ElementState state) {
+        return state switch {
+            ElementState.Solid => solidColor,
+            ElementState.Liquid => liquidColor,
+            ElementState.Gas => gasColor,
+            _ => unknownColor
+        };
     }
 }

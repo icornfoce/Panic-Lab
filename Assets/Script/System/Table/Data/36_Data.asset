@@ -15,9 +15,7 @@ MonoBehaviour:
   elementName: Krypton
   symbol: Kr
   atomicNumber: 36
-  atomicMass: 83.7
+  atomicMass: 84
+  state: 2
   categoryColor: {r: 0.8980392, g: 0.7411765, b: 0.8980392, a: 1}
-  symbolColor: {r: 0, g: 0, b: 0, a: 1}
-  description: The lightest and most abundant chemical element in the universe. At
-    standard temperature and pressure, it is a colorless, odorless, tasteless, and
-    highly flammable gas.
+  description: Noble gas used in energy-efficient windows and specialized lighting.

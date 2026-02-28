@@ -15,9 +15,7 @@ MonoBehaviour:
   elementName: Silicon
   symbol: Si
   atomicNumber: 14
-  atomicMass: 27
-  categoryColor: {r: 0.61960787, g: 0.8980392, b: 0.83137256, a: 1}
-  symbolColor: {r: 0, g: 0, b: 0, a: 1}
-  description: The lightest and most abundant chemical element in the universe. At
-    standard temperature and pressure, it is a colorless, odorless, tasteless, and
-    highly flammable gas.
+  atomicMass: 28
+  state: 0
+  categoryColor: {r: 0.9803922, g: 0.7725491, b: 0.7176471, a: 1}
+  description: Main component of computer chips, sand, and glass.
